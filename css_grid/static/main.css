@@ -1,0 +1,94 @@
+/* CSS styling */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(58, 57, 57);
+}
+
+
+.grid-container {
+    height: 500px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 200px;
+    gap: 30px;
+}
+
+.hero-image {
+    background: url('./images/hero_1.png');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.bright {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-size: 30px;
+    height: 100%;
+}
+
+.bright > h1 {
+    margin-top: 0px;
+}
+
+.dive {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.dive > button {
+    width: 150px;
+    height: 50px;
+    background-color: #000929;
+    color: white;
+    border-radius: 5px;
+}
+
+.new {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    background-color: #000929;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+}
+
+.new > h2 {
+    color: #E9AA52;
+}
+
+.new > article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-article:nth-child(2)::before, .news-article:nth-child(2)::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    display: block;
+}
+
+
+
