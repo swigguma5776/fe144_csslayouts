@@ -1,4 +1,6 @@
 /* CSS Styles */
+/* import CSS file */
+@import url('./media.css');
 
 body {
     margin: 0px;
